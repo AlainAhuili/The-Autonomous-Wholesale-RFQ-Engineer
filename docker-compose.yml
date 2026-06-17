@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  rfq-agent:
+    build: .
+    image: rfq-agent-service:latest
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      - ./logs:/app/logs
