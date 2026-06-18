@@ -29,7 +29,7 @@ jobs:
 
       - name: Run Schema & Tool Validation Tests
         run: |
-          pytest tests/
+          python -m pytest tests/
 
   deploy-to-production:
     needs: validate-and-test
